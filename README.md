@@ -5,7 +5,7 @@ rccontrol is Python library for controlling RC Cars. rccontrol allows you to con
 ### how to install
 
 - git clone https://github.com/konchan/rccontrol.git 
-- Move to src folder and run the following command.
+- run the following command.
 
 ```
 python setup.py install
