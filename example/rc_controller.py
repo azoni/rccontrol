@@ -44,20 +44,23 @@ if __name__ == "__main__":
         val = raw_input('input value: ')
         print val
         if (val == 'q'):
-            servo.stop_event.set()
-            esc.stop_event.set()
+            servo.stop()
+            esc.stop()
             exit()
         try:
             type_, v_ = val.split(',')
-            if (type_ == 'f'):
+            if type_ == 'f':
                 print 'forward, speed', v_
                 esc.forward(int(v_))
-            elif (type_ == 'b'):
+            elif type_ == 'b':
                 print 'backward, speed', v_
                 esc.backward(int(v_))
-            elif (type_ == 't'):
-                print 'turn, angle', v_
-                servo.turn(int(v_))
+            elif type_ == 'l':
+                print 'turn left, angle', v_
+                servo.turn_left(int(v_))
+            elif type_ == 'r':
+                print 'turn right, angle', v_
+                servo.turn_right(int(v_))
         except:
             continue
         time.sleep(0.1)
