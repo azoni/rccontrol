@@ -1,6 +1,6 @@
 rccontrol
 ============
-rccontrol is Python library for controlling RC Car. rccontrol allows you to control your RC Car through Intel edison.
+rccontrol is Python library for controlling RC Cars. rccontrol allows you to control your RC Cars through Intel Edison.
 
 ### how to install
 
