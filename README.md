@@ -21,6 +21,8 @@ import time
 
 if __name__ == "__main__":
     servo = Servo(3)
+    servo.set_max_angle(30) # 30 degrees
+    servo.set_offset('left', 5) # 5 degrees
     servo.start()
     esc = Esc(5)
     print 'start calibrating:'
